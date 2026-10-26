@@ -333,6 +333,15 @@
   .legal-box h2{margin-top:0;font-family:'Fraunces',serif;}
   .legal-box h3{margin:18px 0 4px;font-size:1.02rem;}
   .legal-close{position:sticky;float:right;top:0;border:0;background:#eee;border-radius:50%;width:36px;height:36px;font-size:1.3rem;cursor:pointer;}
+  .rev-sum{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:22px;}
+  .rev-sum .big{font-family:'Fraunces',serif;font-size:2.4rem;color:var(--sea-deep);line-height:1;}
+  .rev-sum .stars{color:#E3A81B;font-size:1.3rem;letter-spacing:2px;}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .rev-card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px;}
+  .rev-card .stars{color:#E3A81B;letter-spacing:2px;}
+  .rev-card p{margin:8px 0;font-size:0.92rem;line-height:1.55;}
+  .rev-card .who{font-size:0.8rem;color:#6C808A;}
+  @media (max-width:860px){.rev-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -380,7 +389,7 @@
 <div class="info-strip">
   <div class="info-strip-inner">
     <div><strong>Lieferung</strong><span class="muted">12:00–21:30 Uhr · ab 20 € Bestellwert</span></div>
-    <div><strong>Bewertung</strong><span class="muted">4,7 / 5 · über 4.700 Rezensionen</span></div>
+    <div><strong>Bewertung</strong><span class="muted">4,7 / 5 · 46 Rezensionen</span></div>
     <div><strong>Telefon</strong><span class="muted"><a href="tel:+4920146912224" style="text-decoration:none;">0201 46912224</a></span></div>
   </div>
 </div>
@@ -1293,6 +1302,19 @@
 </div>
 
 <!-- Delivery -->
+<section id="rezensionen" class="about-section">
+  <div class="section-inner">
+    <span class="kicker" style="color:var(--olive);display:block;margin-bottom:8px;">Rezensionen</span>
+    <h2 style="color:var(--sea-deep);">Das sagen unsere Gäste</h2>
+    <div class="rev-sum"><span class="big">4,7</span><span class="stars">★★★★★</span><span class="muted">basierend auf 46 Rezensionen</span></div>
+    <div class="rev-grid">
+      <!-- Echte Rezensionen hier einfügen (Vorlage):
+      <div class="rev-card"><div class="stars">★★★★★</div><p>„Text der Rezension“</p><div class="who">Vorname · Monat Jahr</div></div>
+      -->
+    </div>
+  </div>
+</section>
+
 <section id="lieferservice" class="delivery-section">
   <div class="section-inner">
     <div class="section-head">
@@ -1368,13 +1390,13 @@
 <button class="legal-close" onclick="closeLegal()" aria-label="Schließen">×</button>
 <h2>Impressum</h2>
 <h3>Angaben gemäß § 5 DDG</h3>
-<p>Paralia Grill<br>[Name des Inhabers / der Inhaberin]<br>Frankenstraße 114<br>45134 Essen</p>
+<p>Paralia Grill<br>Inhaber: Rafei Yaldo<br>Frankenstraße 114<br>45134 Essen</p>
 <h3>Kontakt</h3>
-<p>Telefon: 0201 46912224<br>E-Mail: [E-Mail-Adresse]</p>
+<p>Telefon: 0201 46912224<br>E-Mail: rafael.yaldo@gmx.de</p>
 <h3>Umsatzsteuer-ID</h3>
 <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [USt-IdNr., falls vorhanden]</p>
 <h3>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h3>
-<p>[Name des Inhabers / der Inhaberin], Anschrift wie oben</p>
+<p>Rafei Yaldo, Anschrift wie oben</p>
 <h3>Streitbeilegung</h3>
 <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 </div></div>
@@ -1382,7 +1404,7 @@
 <button class="legal-close" onclick="closeLegal()" aria-label="Schließen">×</button>
 <h2>Datenschutzerklärung</h2>
 <h3>1. Verantwortlicher</h3>
-<p>Paralia Grill, [Name des Inhabers], Frankenstraße 114, 45134 Essen, Tel. 0201 46912224, E-Mail: [E-Mail-Adresse]</p>
+<p>Paralia Grill, Inhaber Rafei Yaldo, Frankenstraße 114, 45134 Essen, Tel. 0201 46912224, E-Mail: rafael.yaldo@gmx.de</p>
 <h3>2. Hosting und Server-Logfiles</h3>
 <p>Beim Aufruf dieser Seite verarbeitet der Hosting-Anbieter technisch notwendige Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (sicherer und stabiler Betrieb der Website). Die Daten werden nach kurzer Zeit gelöscht. Hosting-Anbieter: [Anbieter eintragen].</p>
 <h3>3. Kontaktaufnahme per Telefon, WhatsApp oder E-Mail</h3>
